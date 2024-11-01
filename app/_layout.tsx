@@ -6,13 +6,17 @@ export default function RootLayout() {
       <Stack.Screen 
         name="index" 
         options={{
-          headerTitle: "Sticker Smash"
+          headerTitle: "Sticker Smash",
+          headerLeft: () => <></>
         }}/>
       <Stack.Screen
          name="about"
          options={{
           headerTitle: "About"
         }} />
+      <Stack.Screen
+         name="+not-found"
+         options={{}} />
     </Stack>
   );
 }
