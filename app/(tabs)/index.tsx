@@ -8,9 +8,9 @@ export default function Index() {
     <View
       style={styles.container}
     >
-      <Image source={PlaceholderImage} style={styles.image} />
-      <Text style={styles.text}>Hello World!</Text>
-      
+      <View style={styles.imageContainer}>
+        <Image source={PlaceholderImage} style={styles.image} />
+      </View>
     </View>
   );
 }
@@ -18,21 +18,15 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#25292e"
-  },
-  text: {
-    color: "white"
-  },
-  button: {
-    fontSize: 20,
-    textDecorationLine: "underline",
-    color: "#fff"
   },
   image: {
     width: 320,
     height: 440,
     borderRadius: 18
+  },
+  imageContainer: {
+    flex: 1
   }
 })
